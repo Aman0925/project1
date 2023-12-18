@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,45 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-   <header>
-    <div class="logo">
-        <h2>welcome</h2>
+    <!-- ------------------------Header part of the website -->
+
+    <header>
+        <div class="logo">
+            <h2>welcome</h2>
+        </div>
+        <div class="humburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- -------------------------Main page with image sliders -->
+    <div class="slide-container">
+        <div class="slider">
+            <div class="slide active" style="background: url(image/2.png);"></div>
+            <div class="slide"style="background:url(image/3.png);"></div>
+            <div class="slide"style="background:url(image/4.png);"></div>
+            
+        </div>
+        <div class="controls">
+            <div class="prev">
+                <i class="fa-solid fa-less-than"></i>
+            </div>
+            <div class="next">
+                <i class="fa-solid fa-greater-than"></i>
+            </div>
     </div>
-    <div class="humburger">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-    <div class="menu">
-        <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">products</a></li>
-            <li><a href="">gallery</a></li>
-            <li><a href="">about us</a></li>
-            <li><a href="">contact us</a></li>
-        </ul>
-    </div>
-   </header>
-   <script src="script.js"></script>
+    <!-- --------------------------To attached external javascript file -->
+    <script src="script.js"></script>
 </body>
+
 </html>
