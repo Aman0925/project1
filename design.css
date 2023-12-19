@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+
+}
+.container2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin-top: 10px;
+    border: 2px solid yellowgreen;
+
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    align-content: center;
+    border-radius: 30px;
+
+    /* background: yellow; */
+
+}
+.box2{
+    background: yellow;
+    height: 200px;
+    box-shadow: 0 0 7px #000;
+    transition: transform 0.6s ease-in-out;
+    border-radius: 30px;
+
+
+}
+.box2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: transform 0.7s ease-in-out;
+
+
+
+}
+.box2 img:hover{
+
+    transform: translateY(-15%);
+}
+.box2:hover{
+    box-shadow: 0 0 10px 5px;
+    transform: scale(1.01);
+}
+
+.heads{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+input{
+    width: 300px;
+    line-height: 25px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+
+
+
+}
+i{
+    font-size: 20px;
+    color: #000;
+    border: none;
+    outline: none;
+
+}
+
+
+@media(max-width:420px){
+    .container2{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        border-radius: 30px;
+    }
+    .box2{
+        border-radius: 30px;
+        
+        
+        transition: transform 0.6s ease-in-out;
+        
+
+
+    }
+    .box2 img{
+        width: 100%;
+        height: 100%;
+        transition: transform 0.7s ease-in-out;
+
+    }
+    .box2 img:hover{
+
+        transform: translateY(-15%);
+    }
+    .box2:hover{
+        transform: scale(1.01);
+        box-shadow: 0 0 7px #000 ;
+        
+    }
+    .heads{
+        justify-content: space-between;  
+
+        display: flex;
+        align-items: center;
+        color: yellowgreen;
+        text-shadow: 1px -1px  4px #000;
+
+    }
+    .heads h1{
+        /* font-size: 20px; */
+    }
+    .heads input{
+        width: 150px;
+        display: none;
+
+    }
+    
+    .left{
+        display: flex;
+        margin-right:10px;
+
+    }
+}
