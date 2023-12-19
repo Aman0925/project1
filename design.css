@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,14 +7,15 @@
     text-transform: capitalize;
 
 }
-.container2{
+
+.container2 {
     width: 100%;
     height: 100%;
     display: grid;
     margin-top: 10px;
     border: 2px solid yellowgreen;
 
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +26,8 @@
     /* background: yellow; */
 
 }
-.box2{
+
+.box2 {
     background: yellow;
     height: 200px;
     box-shadow: 0 0 7px #000;
@@ -34,7 +36,8 @@
 
 
 }
-.box2 img{
+
+.box2 img {
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -43,23 +46,26 @@
 
 
 }
-.box2 img:hover{
+
+.box2 img:hover {
 
     transform: translateY(-15%);
 }
-.box2:hover{
+
+.box2:hover {
     box-shadow: 0 0 10px 5px;
     transform: scale(1.01);
 }
 
-.heads{
+.heads {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
 
 }
-input{
+
+input {
     width: 300px;
     line-height: 25px;
     border-radius: 20px;
@@ -69,71 +75,185 @@ input{
 
 
 }
-i{
+
+i {
     font-size: 20px;
     color: #000;
     border: none;
     outline: none;
 
 }
+.box3{
+        width: 100%;
+        height: 100%;
 
 
-@media(max-width:420px){
-    .container2{
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        background: red;
+
+
+}
+.box4{
+        width: 50%;
+        height:500px;
+        background: yellowgreen;
+        justify-content:center;
+        display: flex;
+
+
+        align-items: center;
+
+
+    }
+    .box4 h1{
+        color: red;
+    }
+   
+    .box4 input{
+        width: 100%;
+        margin:  10px 0px;
+        /* display: block; */
+        line-height: 30px;
+        border-bottom: 2px solid red;
+        border-top: 2px solid red;
+        /* border: none; */
+        background: transparent;
+
+        outline: none;
+
+
+    }
+    input::placeholder{
+        color: #000;
+        text-align: center;
+        padding: 10px;
+
+    }
+    .box5{
+        width: 50%;
+        height: 500px;
+
+    }
+    .box5 img{
+        width: 100%;
+        height: 100%;
+
+    }
+    input[type="submit"]{
+        width: 60px;
+        align-items: center;
+        margin: 0 50%;
+        transform: translateX(-50%);
+        transition: 1s ease-in-out;
+
+
+    }
+    input[type="submit"]:hover{
+        background: red;
+        color: #fff;
+        font-weight: 500;
+    }
+/* ----------------------------To make responsive design */
+
+@media(max-width:420px) {
+    .container2 {
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
         align-content: center;
         position: relative;
         border-radius: 30px;
     }
-    .box2{
+
+    .box2 {
         border-radius: 30px;
-        
-        
+
+
         transition: transform 0.6s ease-in-out;
-        
+
 
 
     }
-    .box2 img{
+
+    .box2 img {
         width: 100%;
         height: 100%;
         transition: transform 0.7s ease-in-out;
 
     }
-    .box2 img:hover{
+
+    .box2 img:hover {
 
         transform: translateY(-15%);
     }
-    .box2:hover{
+
+    .box2:hover {
         transform: scale(1.01);
-        box-shadow: 0 0 7px #000 ;
-        
+        box-shadow: 0 0 7px #000;
+
     }
-    .heads{
-        justify-content: space-between;  
+
+    .heads {
+        justify-content: space-between;
 
         display: flex;
         align-items: center;
         color: yellowgreen;
-        text-shadow: 1px -1px  4px #000;
+        text-shadow: 1px -1px 4px #000;
 
     }
-    .heads h1{
+
+    .heads h1 {
         /* font-size: 20px; */
     }
-    .heads input{
+
+    .heads input {
         width: 150px;
         display: none;
 
     }
-    
-    .left{
+
+    .left {
         display: flex;
-        margin-right:10px;
+        margin-right: 10px;
 
     }
+    .box5{
+        display: none;
+
+    }
+    .box3{
+        width: 100%;
+        height: 100%;
+        display: block;
+
+    }
+    .box4{
+        width: 100%;
+        height: 500px;
+
+        padding: 10px;
+        background-image: url(image/4.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    .box4 h1{
+        color: #a3eb13;
+    }
+    input{
+        color: #fff;
+        text-align: center;
+    }
+    input::placeholder{
+        color: #fff;
+        /* background: #b61f1f52; */
+    }
+
 }
