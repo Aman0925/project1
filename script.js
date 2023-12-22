@@ -42,8 +42,8 @@ function show(){
     const shoe = {name,email,number };
     shoesDatabase.push(shoe);
 
+    alert('Shoe added successfully!');
 }
-alert('Shoe added successfully!');
 
 function land(){
         const showfile = document.getElementById('showfile');
