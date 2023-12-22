@@ -6,14 +6,10 @@
     text-decoration: none;
     list-style: none;
     text-transform: capitalize;
-
-
-
 }
 
 body {
     background: #eee;
-
 }
 .zoom{
     transition: transform 1s ease-in-out;
@@ -22,12 +18,10 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-
 }
 .zoom:hover{
     transform: scale(1.1);
 }
-
 header {
     width: 100%;
     height: 60px;
@@ -39,80 +33,47 @@ header {
     padding: 10px;
     z-index: 1000;
     margin-bottom: 2px;
-
-
-
 }
-
 header .logo {
     color: #fff;
     text-shadow: 0 0 6px #fff, 2px 2px 8px #000;
-
-
 }
-
 .humburger {
     display: none;
-    
-
-
 }
-
- .menu ul {
+.menu ul {
     display: flex;
 }
-
 .menu ul li a {
-   
     margin: 0 10px;
     color: hsl(0, 6%, 6%);
     transition: 1s;
     display: block;
-
-
 }
-
 .menu ul li a:hover {
-    /* color: yellowgreen; */
     color: #fff;
-
-
     border-bottom: 2px solid #fff;
-    /* border-bottom: 2px solid yellowgreen; */
 }
-
 .slide-container{
     width: 100%;
     position: relative;
-
     overflow: hidden;
-
     /* background: yellow; */
     margin-bottom: 10px;
-
-    
 } 
 .slider {
     width: 100%;
     height: 300px;
     display: flex;
     transition: transform 0.5s ease-in;
-
-
-
 }
 .slide{
     flex: 0 0 100%;
     height: 350px;
-   
-
-
 }
 .slide img{
     width: 100%;
     height: auto;
-
-
 }
 .controls{
     position: absolute;
@@ -122,19 +83,15 @@ header .logo {
     padding: 20px;
     /* left: 50%; */
     bottom: 40%;
-
-
 }
 .prev,.next{
     font-size: 25px;
     font-weight: 900;
     color: #fff;
-
 }
 .head{
     display: flex;
     justify-content: center;
-
 }
 .head h2{
     color: yellowgreen;
@@ -148,7 +105,6 @@ header .logo {
     justify-content: space-evenly;
     align-items: center;
     padding:  0 10px;
-
 }
 .circle{
     width: 70px;
@@ -156,10 +112,8 @@ header .logo {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    
     justify-content: center;
     box-shadow: 0 0 10px #000;
-
     background: red;
 }
 .products{
@@ -171,8 +125,6 @@ header .logo {
     text-align: center;
     border: 2px solid yellowgreen;
     padding: 10px;
-    
-
 }
 
 .items{
@@ -182,7 +134,6 @@ header .logo {
     background: teal;
     box-shadow: 1px  10px 5px ;
     transition: transform 0.6s ease-in-out;
-
 }
 .items img{
     width: 100%;
@@ -192,7 +143,6 @@ header .logo {
 .items:hover{
     box-shadow:    0 0 10px 5px;
     transform: scale(1.01);
-    
 }
 
 /* -----------------------------make a footer   */
@@ -210,24 +160,16 @@ footer{
     justify-content: space-between;
     color: #fff;
     grid-template-columns: repeat(4,1fr);
-
     align-items: center;
-    
     padding: 10px;
 }
 .product ul li {
-
-    margin:10px;
+     margin:10px;
 }
-
-
-
 .product ul li a{
     cursor: pointer;
     /* margin: 10px; */
     color: #fff;
-
-
 }
 .icon{
     display: flex;
@@ -241,54 +183,12 @@ footer{
     font-size: 25px;
     color: #fff;
     transition: 1s ease-in-out;
-
 }
 .icon i:hover{
     color: yellowgreen;
     cursor: pointer;
-    /* transform: scale(1.01); */
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------------to  make a responsive          */
 
 @media(max-width:420px) {
     header{
@@ -298,13 +198,11 @@ footer{
         display: block;
         cursor: pointer;
         z-index: 600000;
-
     }
     .humburger i{
         color: #000;
         font-size: 20px;
         font-weight: 600;
-
     }
     .menu.menu.active{
         height: 400px;
@@ -317,13 +215,10 @@ footer{
         right: -100%;
         width: 80vw;
         background: rgba(137, 226, 163, 0.601);
-        
         background-image: url(image/1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
-
         transition: 1s;
         height: 0;
         overflow: hidden;
@@ -340,36 +235,29 @@ footer{
     }
     .menu.active ul{
         opacity: 1;
-
     }
     .menu ul li a{
         margin-bottom: 15px;
         font-weight: bold;
         font-size: 16px;
         margin-left: 30px;
-        
     }
     .menu ul li a:hover{
         color: yellowgreen;
         border-bottom: 2px solid yellowgreen;
-
     }
     .slide-container{
         width: 100%;
-        
         height: 250px;
-
     }
     .slide{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-
     }
     .prev,.next{
         font-size: 22px;
         font-weight: 600;
-        
     }
     .contains{
         width: 100%;
@@ -382,8 +270,6 @@ footer{
         border-radius: 50%;
         color: #fff;
         font-size: 10px;
-
-
     }
     .products{
         display: grid;
@@ -391,8 +277,6 @@ footer{
         align-content: center;
         align-items: center;
         justify-content: space-between;
-        
-
     }
     footer{
         width: 100%;
@@ -405,10 +289,6 @@ footer{
         align-items:center ;
         height: 400px;
         padding: 5px;
-
-
     }
    
-
-
 }

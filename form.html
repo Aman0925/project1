@@ -12,22 +12,22 @@
         
     <div class="box4">
         
-        <form action="" method="post">
+        <form action="">
             <h1>contact us</h1>
-            
-            
-            <input type="text" name="name" placeholder="Enter your Name">
-            
-            <input type="email" name="email" placeholder="Enter your Email">
-           
-            <input type="text" name="number" placeholder="Enter Mobile Number:">
-            <input type="submit" name="send">
+            <input type="text" id="name" autocomplete="additional-name"  placeholder="Enter your Name">
+            <input type="email" id="email" autocomplete="additional-name" placeholder="Enter your Email">
+            <input type="text" id="number" autocomplete="additional-name" placeholder="Enter Mobile Number:">
+            <!-- <input type="submit" name="" onclick="showdata()"> -->
+            <button onclick= "show()" type="button" >push</button>
+            <button onclick= "land()" type="button" >show</button>
 
         </form>
     </div>
     <div class="box5">
         <img src="image/5.png" alt="">
     </div>
-</div>
+  </div>
+    <div  id="showfile"></div>
+    <script src="form.js"></script>
 </body>
 </html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: yellow;
+
+    /* display: flex; */
+
+}   
+div{
+    font-size: 25px;
+    margin: 20px;
+    color: crimson;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+
+    justify-content: center;
+
+
+}
+
+div input{
+    line-height: 2;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.controls button{
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    z-index: 10000;
+    transition: 1s ease-in-out;
+
+
+
+}
+button:hover{
+    color: #fff;
+    background: #000000b0;
+    
+}
+#result{
+    display: grid;
+    grid-template-columns: repeat(1,fr);
+    gap: 10px;
+    color: #fff;
+    background: rgba(255, 0, 0, 0.534);
+    
+    border-radius: 20px;
+
+}
+.shop button{
+    background: rgba(0, 0, 255, 0.701);
+    border-radius: 20px;
+    width: 70px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:   0 0 10px #000;
+
+    border: none;
+    outline: none;
+
+    color: #fff;
+    transition: 1s ease-in-out;
+
+
+}
+.shop button:hover{
+    background: blue;
+
+}
